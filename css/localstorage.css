@@ -1,0 +1,113 @@
+:root {
+    --boxSize: 75px;
+    --dark: #0B0C0E;
+    --neutral: #3C4758;
+    --light: aliceblue;
+    --blue: #0053ba;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    background-color: var(--neutral);
+
+}
+button {
+    display: inline-block;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 1rem 0 0;
+    text-decoration: none;
+    background: var(--neutral);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: var(--blue);
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.container {
+
+    padding: 10px;
+    margin: 40px;
+    width: 70%;
+    background-color: var(--dark);
+    color: var(--light);
+    box-shadow: 6px 5px 20px 1px rgba(0,0,0,0.22);
+}
+.scheme {
+    display: grid;
+    grid-template-columns: calc( var(--boxSize)*5) auto;
+    margin-top: 20px;
+}
+.preview {
+    display: grid;
+    grid-template-columns: var(--boxSize) var(--boxSize) var(--boxSize) var(--boxSize) var(--boxSize);
+    grid-column-gap: 0px;   
+}
+.actions  {
+    margin-top: calc( var(--boxSize) / 2 - 10px);
+    margin-left: 50px;
+}
+.color-box {
+    width: var(--boxSize);
+    height: var(--boxSize);   
+    display: inline-grid;
+}
+.color-box:nth-child(1) {
+    border-radius: 7px 0 0 7px;
+}
+.color-box:nth-child(5) {
+    border-radius: 0 7px 7px 0;
+}
+
+aside {
+    padding: 10px;
+    margin: 40px;
+    width: 70%;
+    background-color: white;
+    box-shadow: 6px 5px 20px 1px rgba(0,0,0,0.22);    
+    
+}
+
+legend {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.35rem
+}
+input[type=color] {
+    margin: .5rem;
+    width: calc( var(--boxSize) * 2 );
+    height: calc( var(--boxSize) / 2 );
+}
+label {
+    font-weight: 700;
+}
+fieldset span {
+    font-style: italic;
+}
+a:link, a:visited {
+    color: aqua;
+}
+hr {
+    margin: 0.75rem 0;
+}
+
+
+

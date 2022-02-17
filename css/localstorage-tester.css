@@ -1,0 +1,45 @@
+html, body {
+    height: : 100%;
+}
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    min-height: 700px;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    flex: 1;
+}
+span {
+    opacity: 0.5;
+}
+
+/*#color1 {
+    background-color:#32C927;
+
+}
+#color2 {
+    background-color:#8AC927;
+
+}
+#color3 {
+    background-color:#7BC4C6;
+
+}
+#color4 {
+    background-color:#E08A2F;
+
+}
+#color5 {
+    background-color:#C9303D;
+
+}*/
